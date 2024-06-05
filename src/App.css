@@ -1,7 +1,61 @@
-#root {
-  max-width: 1280px;
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
+  cursor: none;
 }
 
+#root {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  --color-menu-red: #e20e17;
+  --color-menu-white: #fff;
+  --color-menu-hover: #8b8b8b;
+  --font-family-menu: nunitosans-italic;
+  --font-family-regular: nunitosans-regular;
+}
+
+@font-face {
+  font-family: nunitosans-italic;
+  src: url("./font/NunitoSans-Italic.ttf");
+  
+}
+
+@font-face {
+  font-family: nunitosans-regular;
+  src: url("./font/NunitoSans.ttf");
+  
+}
+
+@font-face {
+  font-family: ayuthaya;
+  src: url("./font/Ayuthaya.ttf");
+}
+
+
+body {
+  
+  background-color: black;
+  overflow-y: hidden;
+}
+
+
+
+#video-estrellas-container {
+  position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#video-estrellas {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
