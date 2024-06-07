@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import instagram from '../assets/svg/Instagram.svg'
 import tikTok from '../assets/svg/tik-tok.svg'
 import youtube from '../assets/svg/youtube.svg'
@@ -8,7 +9,7 @@ function Banner() {
     return (
         <div class="banner">
         <a onclick="toggleLogo()">
-            <svg id="logoLudics" class="logo-ludics" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 1364.08 229.79">
+            <Link to="/"><svg id="logoLudics" class="logo-ludics" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 1364.08 229.79">
                 <g>
                   <rect x="285.52" width="12.42" height="229.79"/>
                   <g>
@@ -48,7 +49,7 @@ function Banner() {
                   </g>
                   <polygon points="1348.78 205.02 1364.08 149.37 1306.84 149.37 1291.54 205.02 1348.78 205.02"/>
                 </g>
-              </svg>
+              </svg></Link>
         </a>
         <div class="social-media">
             <a href="https://www.instagram.com/ludicschile/" target="_blank"><img loading="lazy" class="logo-ig" src={instagram} alt=""/></a>
