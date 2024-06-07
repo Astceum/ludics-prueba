@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
     <Banner />
     <Routes>    
-        <Route index path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/ludics" element={<Ludics />} />
         <Route path="/and-more" element={<AndMore />} />
     </Routes>
