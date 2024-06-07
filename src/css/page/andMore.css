@@ -1,0 +1,257 @@
+#t_and_more .toggleAndMore {  
+    transform: translateX(-350%);
+}
+
+aside#and-more {
+    width: 100%;
+    /* left: 350%; */
+    right: 0;
+    overflow-y: scroll;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    transition: all 2s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    z-index: 1;
+}
+
+
+aside#and-more::-webkit-scrollbar {
+    display: none;
+}
+
+#and-more {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family-menu);
+    color: var(--color-menu-white);
+    margin: 0;
+    padding: 0;
+    
+}
+
+#container-resume {
+    height: 42vh;
+    background-color: #000000;
+    padding: 60px 20px 0 20px;
+    display: flex;
+}
+
+.description-resume {
+    width: 40%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.video-resume {
+    width: 60%;
+    height: 100%;
+}
+
+.video-resume video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-resume {
+    width: 60%;
+    height: 42vh;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0));
+    position: absolute;
+}
+
+.gradient-resume img {
+    padding-left: 10%;
+    width: 30%;
+    object-fit: cover;
+}
+
+.gradient-resume p,
+.gradient-resume h4 {
+    padding-left: 10%;
+    font-family: var(--font-family-regular);
+    font-size: 1.125rem;
+    color: var(--color-menu-white);
+    font-weight: 400;
+}
+
+.gradient-resume h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.gradient-resume h4 span {
+    margin-right: 2em;
+}
+
+.slider-portafolio {
+    position: relative;
+    height: 100%;
+    padding: 0 20px 20px 20px;
+    margin: 0;
+}
+
+.swiper2 {
+    width: 100%;
+    /* height: 90%; */
+    margin: 25px 0;
+    overflow: hidden;
+    
+}
+
+.swiper3 {
+    width: 100%;
+    height: 35%;
+    margin: 25px 0;
+    overflow: hidden;
+    
+}
+
+.swiper2 .swiper-slide,
+.swiper3 .swiper-slide {
+    position: relative !important;
+    text-align: center;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.swiper2 .swiper-slide img,
+.swiper3 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hablemos-title{
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hablemos-title img {
+    width: 40%;
+}
+
+
+#contact-ludics ul {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-ludics img {
+    width: 50px;
+}
+
+#contact-ludics li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+#contact-ludics h2 {
+    margin-left: 50px;
+    font-size: 20pt;
+}
+
+
+#title-company-and-more img {
+    padding-top: 6%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#company-and-more {
+    
+    margin-top: 50px;
+    padding-bottom: 10%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: url('https://res.cloudinary.com/di5yg1rzm/image/upload/v1717443732/home-local/background-company-2_2_yiyzvx.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.company {
+    height: 80px;
+    width: 15%;
+    margin: 2% 3%;
+}
+
+@media screen and (max-width: 679px) {
+    #container-resume {
+        display: none;
+    }
+
+    .slider-portafolio {
+        position: relative;
+        height: 110%;
+        padding: 60px 20px 20px 20px;
+        margin: 0;
+    }
+
+    #hablemos-title{
+        padding-top: 20%; /* TODO */
+    }
+
+    #hablemos-title img {
+        width: 80%;
+    }
+    
+    #contact-ludics img {
+        width: 35px;
+    }
+
+    #contact-ludics ul {
+        width: 100%;
+        color: #fff;
+        display: grid;
+        justify-content: none;
+        align-items: none;
+    }
+    
+    #contact-ludics li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -1rem 1rem;
+    }
+    
+    #contact-ludics h2 { /* TODO */
+        margin-left: 20px; 
+        font-size: 12pt;
+    }
+
+    #title-company-and-more img {
+        padding-top: 6%;
+        display: block;
+        width: 100%;
+        height: 109%;
+        object-fit: cover;
+        user-select: none;
+    }
+
+    #company-and-more {
+        margin-top: 77px;
+    }
+    
+    .company {
+        height: 70px;
+        width: 37%;
+    }
+}
